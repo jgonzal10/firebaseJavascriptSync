@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <title>CANVAS - ANOTACOES</title>
+ <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+
+ <!-- add canvas module -->
+<section id="add-canvas-module" >
+    <button id="open-add-canvas-form-btn">+</button>
+    <form>
+      <h2>Adicionar Canvas</h2>
+      Usuario:<br>
+      <input type='text' data-key='userId' class='canvas-input'><br>
+      Pagina Livro:<br>
+      <input type='text' data-key='book_page' class='canvas-input'><br>
+      Valor:<br>
+      <input type='text' data-key='compressedValue' class='canvas-input'><br>
+      <button type='button' id="add-canvas-btn">Adicionar Canvas</button>
+   </form>
+  </section>
+
+
+ <!-- edit canvas module -->
+ <section id="edit-canvas-module">
+    <form>
+    <h2>Editar Canvas</h2>
+    <input type="hidden" class="edit-canvasid">
+    Usuario:<br>
+    <input type='text' data-key='userId' class='edit-canvas-input'><br>
+    Pagina Livro:<br>
+    <input type='text' data-key='book_page' class='edit-canvas-input'><br>
+    Valor:<br>
+    <input type='text' data-key='compressedValue' class='edit-canvas-input'><br>
+    <button type='button' id="edit-canvas-btn">Salvar</button>
+    </form>
+    </section>
+
+
+ <ul id="canvasList"></ul>
+
+<div id="canvasDetail">
+ <p >Aluno :<strong class="userId"></strong></p>
+ <p >Pagina Livro: <strong class="bookPage"></strong></p>
+ <p >Valor: <strong class="compressedValue"></strong></p>
+ </div>
+ 
+ 
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+
+ <script type="text/javascript" src="app.js"></script>
+ </body>
+
+</html>
